@@ -28,7 +28,7 @@ export const blogPosts = [
     readTime: "5 min read",
     author: "James Wilson, ACA",
     image:
-      "https://images.unsplash.com/photo-1454165833767-027ffea70c46?auto=format&fit=crop&q=80&w=1200",
+      "https://taxfix.com/en-uk/wp-content/uploads/25Q3_TS_Rebrand_UK_Website_Content_Blog-and-guides_making-tax-digital-but-not-yet.png",
     slug: "mtd-uk-transition",
     content: "Long form content about MTD in the UK...",
   },
@@ -41,7 +41,7 @@ export const blogPosts = [
     readTime: "8 min read",
     author: "Alex Rivera",
     image:
-      "https://images.unsplash.com/photo-1485827362309-4df3527055c8?auto=format&fit=crop&q=80&w=1200",
+      "https://www.noupe.com/wp-content/uploads/2024/05/Featured-Image-Impact-of-AI-and-Cloud-Computing-on-the-Future-of-Finance.jpg",
     slug: "ai-cloud-accounting",
     content: "Long form content about AI in accounting...",
   },
@@ -79,8 +79,7 @@ export const blogPosts = [
     date: "Aug 22, 2025",
     readTime: "10 min read",
     author: "Sarah Johnson, CPA",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80&w=1200",
+    image: "https://hyno.co/images/Blogs/Frame-1047151.png",
     slug: "irs-section-174-saas",
     content: "Long form content about Section 174...",
   },

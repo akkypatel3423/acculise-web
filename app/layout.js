@@ -62,17 +62,17 @@ export const metadata = {
       "Specialist US & UK accounting and taxation services for global firms.",
     images: ["https://acculise.com/twitter-image.jpg"],
   },
-  // robots: {
-  //   index: true,
-  //   follow: true,
-  //   googleBot: {
-  //     index: true,
-  //     follow: true,
-  //     'max-video-preview': -1,
-  //     'max-image-preview': 'large',
-  //     'max-snippet': -1,
-  //   },
-  // },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -90,15 +90,12 @@ export default function RootLayout({ children }) {
               logo: "https://acculise.com/logo.png",
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+1-555-123-4567",
+                telephone: "+91 94099 32535",
                 contactType: "customer service",
                 areaServed: ["US", "GB"],
                 availableLanguage: "en",
               },
-              sameAs: [
-                "https://linkedin.com/company/acculise",
-                "https://instagram.com/acculise",
-              ],
+              sameAs: ["https://www.linkedin.com/company/acculise-solutions"],
             }),
           }}
         />
@@ -108,7 +105,7 @@ export default function RootLayout({ children }) {
 
         {/* Floating WhatsApp Button */}
         <a
-          href="https://wa.me/15551234567"
+          href="https://wa.me/9409932535"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center"

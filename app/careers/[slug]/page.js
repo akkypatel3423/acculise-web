@@ -10,14 +10,73 @@ export function generateStaticParams() {
   }));
 }
 
-// export async function generateMetadata({ params }) {
-//   const { slug } = await params;
-//   const job = jobsList.find(j => j.slug === slug)
-//   return {
-//     title: job ? `${job.title} | Global Excellence Core` : 'Partner with Acculise',
-//     description: job ? job.description : 'High-precision technical roles in global finance and compliance.',
-//   }
-// }
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+  const job = jobsList.find((j) => j.slug === slug);
+
+  const baseUrl = "https://www.acculise.com"; // replace with real domain
+  const url = `${baseUrl}/careers/${slug}`;
+
+  if (!job) {
+    return {
+      title: "Position Not Found | Acculise Global Careers",
+      description:
+        "Explore elite technical roles in global finance, taxation, and compliance.",
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
+  }
+
+  return {
+    title: `${job.title} | Acculise Global Excellence Core`,
+    description: job.description,
+    keywords: [
+      job.title,
+      job.department,
+      "Finance Careers",
+      "US Tax Jobs",
+      "Remote Accounting Roles",
+      "CPA Careers",
+      "Global Compliance Jobs",
+    ],
+    authors: [{ name: "Acculise Hiring Authority" }],
+    creator: "Acculise Global",
+    publisher: "Acculise Global Excellence Core",
+    metadataBase: new URL(baseUrl),
+    alternates: {
+      canonical: url,
+    },
+
+    openGraph: {
+      title: `${job.title} | Acculise Careers`,
+      description: job.description,
+      url,
+      siteName: "Acculise Global",
+      locale: "en_US",
+      type: "website",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: `${job.title} | Acculise Careers`,
+      description: job.description,
+      creator: "@acculise", // replace if available
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-snippet": -1,
+        "max-image-preview": "large",
+      },
+    },
+  };
+}
 
 export default function JobDetailPage({ params }) {
   const { slug } = params;
@@ -81,16 +140,16 @@ export default function JobDetailPage({ params }) {
                       <span className="text-blue-300/50 font-black uppercase tracking-[0.3em] text-[10px]">
                         Board Remuneration
                       </span>
-                      <span className="text-white font-black uppercase tracking-widest text-lg">
+                      {/* <span className="text-white font-black uppercase tracking-widest text-lg">
                         {job.salary}
-                      </span>
+                      </span> */}
                     </div>
                   </div>
                 </div>
 
                 <div className="shrink-0">
                   <a
-                    href={`mailto:akkypatel3423@gmail.com?subject=Strategic Application: ${job.title}`}
+                    href={`mailto:info@acculise.com?subject=Strategic Application: ${job.title}`}
                     className="group bg-white text-primary px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-[11px] shadow-3xl hover:bg-blue-50 transition-all duration-500 hover:scale-110 !flex items-center"
                   >
                     Join the Board
@@ -218,7 +277,7 @@ export default function JobDetailPage({ params }) {
                     </ul>
                     <div className="mt-16 pt-16 border-t border-white/10 relative z-10">
                       <a
-                        href={`mailto:akkypatel3423@gmail.com?subject=Dossier Submission: ${job.title}`}
+                        href={`mailto:info@acculise.com?subject=Dossier Submission: ${job.title}`}
                         className="w-full inline-block bg-secondary text-white text-center py-6 rounded-full text-[11px] font-black uppercase tracking-[0.3em] hover:scale-105 transition-transform duration-500 shadow-2xl"
                       >
                         Transmit Your Dossier

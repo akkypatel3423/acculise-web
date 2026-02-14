@@ -4,15 +4,88 @@ import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
 import { industriesData } from "@/components/industries/industriesData";
 
-// export async function generateMetadata({ params }) {
-//   const { slug } = await params;
-//   const industry = industriesData.find(i => i.slug === slug)
-//   return {
-//     title: industry ? `${industry.title} | Sector Intelligence` : 'Industry Solutions',
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+  const industry = industriesData.find((i) => i.slug === slug);
 
-//     description: industry ? industry.description : 'Technical sector-specific financial intelligence.',
-//   }
-// }
+  const baseUrl = "https://www.acculise.com"; // replace with real domain
+  const url = `${baseUrl}/industries/${slug}`;
+
+  if (!industry) {
+    return {
+      title: "Industry Solutions | Acculise Sector Intelligence",
+      description:
+        "Explore sector-specific financial intelligence, compliance infrastructure, and scalable accounting solutions.",
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
+  }
+
+  const title = `${industry.title} Solutions | Acculise Sector Intelligence`;
+  const description =
+    industry.description ||
+    `Expert financial, tax, and compliance solutions tailored for the ${industry.title} industry.`;
+
+  return {
+    title,
+    description,
+
+    keywords: [
+      industry.title,
+      `${industry.title} accounting`,
+      `${industry.title} tax services`,
+      `${industry.title} compliance`,
+      `${industry.title} financial solutions`,
+      "outsourced accounting",
+      "global compliance",
+      "US tax services",
+      "CPA outsourcing",
+      "Acculise sector intelligence",
+    ],
+
+    authors: [{ name: "Acculise Intelligence Board" }],
+    creator: "Acculise Global",
+    publisher: "Acculise Sector Intelligence",
+
+    metadataBase: new URL(baseUrl),
+
+    alternates: {
+      canonical: url,
+    },
+
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: "Acculise Global",
+      locale: "en_US",
+      type: "article",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      creator: "@acculise", // replace if exists
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-snippet": -1,
+        "max-image-preview": "large",
+        "max-video-preview": -1,
+      },
+    },
+
+    category: "Finance",
+  };
+}
 
 export function generateStaticParams() {
   return industriesData.map((post) => ({
