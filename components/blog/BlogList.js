@@ -133,11 +133,10 @@ export default function BlogList() {
             <AnimatedSection key={index} delay={index * 0.1}>
               <article className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col h-full">
                 <div className="relative h-64 overflow-hidden">
-                  <Image
+                  <img
                     src={post.image}
                     alt={post.title}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="object-cover absolute group-hover:scale-110 transition-transform h-full w-full duration-700"
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-white/90 backdrop-blur-md text-primary px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider">

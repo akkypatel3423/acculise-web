@@ -62,11 +62,10 @@ export default function HeroSection() {
     <section className="relative h-screen flex items-center overflow-hidden bg-primary font-sans">
       {/* Background */}
       <div className="absolute inset-0">
-        <Image
+        <img
           src="https://images.unsplash.com/photo-1554475900-0a0350e3fc7b?auto=format&fit=crop&q=80&w=2000"
           alt="Acculise Modern Finance Hub"
-          fill
-          className="object-cover opacity-20 mix-blend-overlay scale-110"
+          className="object-cover absolute opacity-20 mix-blend-overlay h-full w-full scale-110"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-br from-[#0F2C67] via-[#0F2C67]/95 to-transparent"></div>

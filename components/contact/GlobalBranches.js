@@ -53,11 +53,10 @@ export default function GlobalBranches() {
             <AnimatedSection key={index} delay={index * 0.1}>
               <div className="group bg-white rounded-[2.5rem] overflow-hidden shadow-xl shadow-blue-900/5 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-700 h-full border border-slate-100 flex flex-col">
                 <div className="relative h-64 overflow-hidden">
-                  <Image
+                  <img
                     src={branch.image}
                     alt={`Acculise Solutions ${branch.city} Office`}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-1000"
+                    className="object-cover absolute group-hover:scale-110 transition-transform h-full w-full duration-1000"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                   <div className="absolute bottom-6 left-8">

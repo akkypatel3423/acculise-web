@@ -115,12 +115,10 @@ export default function BlogPostPage({ params }) {
       <div className="bg-white overflow-hidden">
         {/* Extreme Ministerial Hero */}
         <section className="relative h-[80vh] min-h-[700px] w-full flex items-end pt-24 overflow-hidden">
-          <Image
+          <img
             src={post.image}
             alt={post.title}
-            fill
-            className="object-cover"
-            priority
+            className="object-cover absolute h-full w-full"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent"></div>
           <div className="absolute inset-0 bg-blue-900/20 mix-blend-overlay"></div>
