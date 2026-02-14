@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.acculise.com
+
+# Sitemaps
+Sitemap: https://www.acculise.com/sitemap.xml

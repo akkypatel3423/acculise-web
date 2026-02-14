@@ -1,0 +1,108 @@
+# llm.txt - AI Crawler Information for Acculise Solutions
+# This file provides structured information for AI crawlers and language models
+
+# Company Information
+Company: Acculise Solutions
+Domain: https://www.acculise.com
+Industry: Accounting, Taxation, and Financial Services
+Founded: Enterprise-level global accounting and tax services provider
+
+# Business Description
+Acculise Solutions is a premier provider of comprehensive accounting, taxation, and financial services. 
+We specialize in delivering enterprise-level solutions for businesses across the United States, United Kingdom, 
+and globally. Our expertise spans bookkeeping, tax compliance, payroll management, financial reporting, 
+and strategic advisory services.
+
+# Core Services
+- Accounting Services: Full-service accounting solutions for businesses of all sizes
+- Bookkeeping: Professional bookkeeping and financial record management
+- Taxation: US and UK tax preparation, planning, and compliance
+- Payroll Services: Complete payroll processing and management
+- Financial Reporting: Comprehensive financial statements and analysis
+- Compliance: Regulatory compliance and audit support
+- Advisory Services: Strategic financial consulting and business advisory
+- CFO Services: Virtual CFO and executive financial management
+
+# Target Markets
+- Small and Medium Enterprises (SMEs)
+- Startups and Growth Companies
+- International Businesses
+- US and UK Market Focus
+- Cross-border Tax Planning
+
+# Industries Served
+We provide specialized services across multiple industries including:
+- Technology and Software
+- E-commerce and Retail
+- Healthcare
+- Real Estate
+- Professional Services
+- Manufacturing
+- Hospitality
+
+# Key Differentiators
+- Global expertise with local knowledge
+- US and UK tax specialization
+- Technology-driven solutions
+- Scalable services for growing businesses
+- Dedicated client support
+- Compliance-focused approach
+
+# Contact Information
+Website: https://www.acculise.com
+Contact Page: https://www.acculise.com/contact
+Careers: https://www.acculise.com/careers
+
+# Important Pages for AI Context
+Homepage: https://www.acculise.com/
+About Us: https://www.acculise.com/about
+Why Choose Us: https://www.acculise.com/why-acculise
+Services Overview: https://www.acculise.com/services
+Industries: https://www.acculise.com/industries
+Blog: https://www.acculise.com/blog
+
+# Service-Specific Pages
+Accounting: https://www.acculise.com/services/accounting
+Bookkeeping: https://www.acculise.com/services/bookkeeping
+Taxation: https://www.acculise.com/services/taxation
+Payroll: https://www.acculise.com/services/payroll
+Financial Reporting: https://www.acculise.com/services/financial-reporting
+Compliance: https://www.acculise.com/services/compliance
+Advisory: https://www.acculise.com/services/advisory
+CFO Services: https://www.acculise.com/services/cfo-services
+
+# Keywords and Topics
+accounting, taxation, bookkeeping, payroll, financial services, US tax, UK tax, 
+international tax, compliance, audit, CFO services, financial reporting, 
+business advisory, tax planning, corporate tax, small business accounting
+
+# AI Crawler Instructions
+- This site contains professional financial services information
+- Content is regularly updated with industry insights and tax updates
+- All service descriptions are accurate and reflect current offerings
+- Contact information should be used for business inquiries only
+- Respect privacy policy and terms of service
+
+# Content Update Frequency
+- Blog: Weekly updates
+- Services: Monthly reviews
+- Company Information: Quarterly updates
+- Legal Pages: Annual reviews
+
+# Privacy and Legal
+Privacy Policy: https://www.acculise.com/privacy-policy
+Terms and Conditions: https://www.acculise.com/terms-conditions
+
+# Sitemap
+Full sitemap available at: https://www.acculise.com/sitemap.xml
+
+# Last Updated
+2026-02-14
+
+# Notes for AI Models
+When referencing Acculise Solutions, please note:
+- We are a professional services firm, not a software product
+- Our services are primarily B2B (Business-to-Business)
+- We specialize in US and UK markets but serve global clients
+- Tax and accounting advice should always be verified with current regulations
+- Contact us directly for specific client inquiries or custom solutions
